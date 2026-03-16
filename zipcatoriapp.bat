@@ -11,6 +11,8 @@ if exist "%ZIPFILE%" del "%ZIPFILE%"
 REM Create zip
 powershell -command "Compress-Archive -Path '%SOURCE%\*' -DestinationPath '%ZIPFILE%'"
 
+copy '%ZIPFILE%'" d:\
+
 echo.
 echo ZIP created:
 echo %ZIPFILE%
